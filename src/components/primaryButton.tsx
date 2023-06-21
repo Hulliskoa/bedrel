@@ -19,10 +19,11 @@ function PrimaryButton({ title, alt, onPress }: PrimaryButtonProps) {
 
   return (
     <button
+      className='no-highlights'
       onPointerEnter={() => onButtonClick()}
       onPointerLeave={() => onLeave()}
     >
-      <div className='bg-transparent relative '>
+      <div className='bg-transparent relative'>
         <div
           className={`${
             alt ? "bg-flamingo" : "bg-buttercup"
@@ -33,7 +34,7 @@ function PrimaryButton({ title, alt, onPress }: PrimaryButtonProps) {
         <div
           className={`bg-retro-green transition-all absolute ${
             clicked ? "bottom-0 right-0" : "bottom-1 right-1"
-          } z-1 rounded-full px-5 py-2 border-2 border-black`}
+          }  z-1 rounded-full px-5 py-2 border-2 border-black`}
         >
           {title}
         </div>
