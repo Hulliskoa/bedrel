@@ -37,7 +37,7 @@ function PrimaryButton({ title, alt, onPress }: PrimaryButtonProps) {
             clicked
               ? "bottom-0 right-0 bg-retro-green-shade-1"
               : "bottom-1 right-1 bg-retro-green"
-          } z-1 rounded-full px-5 py-2 flex-1 border-2 border-black`}
+          } z-1 rounded-full px-5 py-2 flex-1 border-2 z-1 border-black`}
         >
           {title}
         </div>
