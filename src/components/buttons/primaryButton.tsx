@@ -3,7 +3,7 @@ import React, { useState } from "react";
 interface PrimaryButtonProps {
   title: string;
   alt?: boolean;
-  onPress?: () => void;
+  onPress: () => void;
 }
 
 function PrimaryButton({ title, alt, onPress }: PrimaryButtonProps) {
@@ -19,9 +19,10 @@ function PrimaryButton({ title, alt, onPress }: PrimaryButtonProps) {
 
   return (
     <button
-      className='no-highlights'
+      className='no-highlights whitespace-nowrap'
       onPointerEnter={() => onButtonClick()}
       onPointerLeave={() => onLeave()}
+      onClick={() => onPress()}
     >
       <div className='bg-transparent relative'>
         <div
@@ -32,9 +33,11 @@ function PrimaryButton({ title, alt, onPress }: PrimaryButtonProps) {
           {title}
         </div>
         <div
-          className={`bg-retro-green transition-all absolute ${
-            clicked ? "bottom-0 right-0" : "bottom-1 right-1"
-          }  z-1 rounded-full px-5 py-2 border-2 border-black`}
+          className={` transition-all absolute ${
+            clicked
+              ? "bottom-0 right-0 bg-retro-green-shade-1"
+              : "bottom-1 right-1 bg-retro-green"
+          } z-1 rounded-full px-5 py-2 border-2 border-black`}
         >
           {title}
         </div>

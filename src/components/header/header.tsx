@@ -1,12 +1,11 @@
 import React from "react";
-import PrimaryButton from "../primaryButton";
 import HeaderMenuItem from "./HeaderMenuItem";
 
 function Header() {
   return (
     <nav className='flex items-center justify-between flex-wrap bg-teal-500 p-6'>
       <div className='flex items-center flex-shrink-0 text-white mr-6'>
-        <span className='font-semibold text-black text-xl tracking-tight'>
+        <span className='font-poppins font-bold text-black text-xl tracking-tight'>
           Bedre Læring
         </span>
       </div>
@@ -22,7 +21,7 @@ function Header() {
           </svg>
         </button>
       </div>
-      <div className='w-full gap-x-10  block lg:flex lg:items-center lg:w-auto'>
+      <div className='hidden lg:block w-full gap-x-10  lg:flex lg:items-center lg:w-auto'>
         <HeaderMenuItem text='Program' />
         <HeaderMenuItem text='Informasjon' />
         <HeaderMenuItem text='Foredrag' />

@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import Header from "./components/header/header";
-import PrimaryButton from "./components/primaryButton";
+import PrimaryButton from "./components/buttons/primaryButton";
 import MainPage from "./layout/MainPage";
 
 function App() {
@@ -9,8 +9,9 @@ function App() {
     <MainPage>
       <>
         <Header />
-        <div className='px-10'>
-          <PrimaryButton title='Påmelding' />
+        <div className='px-10 flex gap-x-10'>
+          <PrimaryButton title='Påmelding' onPress={() => {}} />
+          <PrimaryButton title='Alt button' onPress={() => {}} alt />
         </div>
       </>
     </MainPage>
