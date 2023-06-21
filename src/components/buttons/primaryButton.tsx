@@ -19,16 +19,16 @@ function PrimaryButton({ title, alt, onPress }: PrimaryButtonProps) {
 
   return (
     <button
-      className='no-highlights whitespace-nowrap'
+      className='no-highlights whitespace-nowrap mx-auto self-center flex'
       onPointerEnter={() => onButtonClick()}
       onPointerLeave={() => onLeave()}
       onClick={() => onPress()}
     >
-      <div className='bg-transparent relative'>
+      <div className='bg-transparent relative flex '>
         <div
           className={`${
             alt ? "bg-flamingo" : "bg-buttercup"
-          } text-transparent rounded-full relative bottom-1 right-1 border-2 px-5 py-2 border-black inset-0 z-0`}
+          } text-transparent rounded-full border-2 px-5 py-2 border-black inset-0 z-0`}
         >
           {title}
         </div>
@@ -37,7 +37,7 @@ function PrimaryButton({ title, alt, onPress }: PrimaryButtonProps) {
             clicked
               ? "bottom-0 right-0 bg-retro-green-shade-1"
               : "bottom-1 right-1 bg-retro-green"
-          } z-1 rounded-full px-5 py-2 border-2 border-black`}
+          } z-1 rounded-full px-5 py-2 flex-1 border-2 border-black`}
         >
           {title}
         </div>

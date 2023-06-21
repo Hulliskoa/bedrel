@@ -1,7 +1,12 @@
 import React from "react";
+import Page from "../layout/Page";
 
 function SignUp() {
-  return <div className='px-10 flex gap-x-10'>Påmelding</div>;
+  return (
+    <Page>
+      <div>Påmelding</div>
+    </Page>
+  );
 }
 
 export default SignUp;

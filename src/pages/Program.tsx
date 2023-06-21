@@ -3,7 +3,7 @@ import React from "react";
 import PrimaryButton from "../components/buttons/primaryButton";
 import Page from "../layout/Page";
 
-function Info() {
+function Program() {
   return (
     <Page>
       <PrimaryButton title='DDDD' onPress={() => {}} />
@@ -12,4 +12,4 @@ function Info() {
   );
 }
 
-export default Info;
+export default Program;

@@ -23,7 +23,7 @@ function Header() {
         </button>
       </div>
       <div className='hidden w-full gap-x-10  lg:flex lg:items-center lg:w-auto'>
-        <HeaderMenuItem path='/' text='Program' />
+        <HeaderMenuItem path='/program' text='Program' />
         <HeaderMenuItem path='/info' text='Informasjon' />
         <HeaderMenuItem path='/foredrag' text='Foredrag' />
         <HeaderMenuItem path='/påmelding' text='Påmelding' />

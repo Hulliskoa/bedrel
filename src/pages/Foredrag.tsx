@@ -1,7 +1,12 @@
 import React from "react";
+import Page from "../layout/Page";
 
 function Foredrag() {
-  return <div className='px-10 flex gap-x-10'>Hei</div>;
+  return (
+    <Page>
+      <div>hei</div>
+    </Page>
+  );
 }
 
 export default Foredrag;

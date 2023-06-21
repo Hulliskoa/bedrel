@@ -9,6 +9,11 @@ export function RouterElement() {
       element: lazyLoadRoutes("Home"),
     },
     {
+      path: "/program",
+      name: "Program",
+      element: lazyLoadRoutes("Program"),
+    },
+    {
       path: "/info",
       name: "Info",
       element: lazyLoadRoutes("Info"),
