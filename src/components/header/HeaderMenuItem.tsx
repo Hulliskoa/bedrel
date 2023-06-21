@@ -1,19 +1,19 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 interface HeaderMenuItemProps {
   text: string;
+  path: string;
 }
 
-function HeaderMenuItem({ text }: HeaderMenuItemProps) {
+function HeaderMenuItem({ text, path }: HeaderMenuItemProps) {
   return (
-    <div className='text-sm  justify-self-end lg:flex-grow'>
-      <a
-        href='#responsive-header'
-        className='block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:border-b-2 hover:text-grey-1'
-      >
-        {text}
-      </a>
-    </div>
+    <Link
+      to={path}
+      className='text-sm no-highlights justify-self-end lg:flex-grow block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:border-b-2 hover:text-retro-green'
+    >
+      {text}
+    </Link>
   );
 }
 

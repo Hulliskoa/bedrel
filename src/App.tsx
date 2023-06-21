@@ -1,20 +1,17 @@
 import React from "react";
 import "./App.css";
 import Header from "./components/header/header";
-import PrimaryButton from "./components/buttons/primaryButton";
 import MainPage from "./layout/MainPage";
+import { RouterElement } from "./routes";
 
 function App() {
   return (
-    <MainPage>
-      <>
-        <Header />
-        <div className='px-10 flex gap-x-10'>
-          <PrimaryButton title='Påmelding' onPress={() => {}} />
-          <PrimaryButton title='Alt button' onPress={() => {}} alt />
-        </div>
-      </>
-    </MainPage>
+    <>
+      <Header />
+      <MainPage>
+        <RouterElement />
+      </MainPage>
+    </>
   );
 }
 
