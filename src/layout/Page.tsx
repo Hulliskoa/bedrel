@@ -6,7 +6,7 @@ interface MainPageProps {
 
 function Page({ children }: MainPageProps) {
   return (
-    <div className='grid grid-cols-4 gap-x-4 mx-10'>
+    <div className='grid md:grid-cols-4 gap-x-4 '>
       {children}
     </div>
   );

@@ -11,7 +11,12 @@ function PrimaryButton({ title, alt, onPress }: PrimaryButtonProps) {
 
   const onButtonClick = () => {
     setClicked(true);
+    if (onPress) onPress();
   };
+
+  function isTouchDevice() {
+    return "ontouchstart" in window || navigator.maxTouchPoints > 0;
+  }
 
   const onLeave = () => {
     setClicked(false);
@@ -19,25 +24,28 @@ function PrimaryButton({ title, alt, onPress }: PrimaryButtonProps) {
 
   return (
     <button
-      className='no-highlights whitespace-nowrap mx-auto self-center flex'
-      onPointerEnter={() => onButtonClick()}
-      onPointerLeave={() => onLeave()}
-      onClick={() => onPress()}
+      className='no-highlights whitespace-nowrap self-center flex'
+      onTouchEnd={() => onLeave()}
+      onTouchStart={() => onButtonClick()}
+      onMouseUp={() => onLeave()}
+      onMouseDown={() => onButtonClick()}
     >
-      <div className='bg-transparent relative flex '>
+      <div className='bg-transparent  group font-semibold  relative flex '>
         <div
           className={`${
-            alt ? "bg-flamingo" : "bg-buttercup"
-          } text-transparent rounded-full border-2 px-5 py-2 border-black inset-0 z-0`}
+            alt
+              ? "bg-flamingo group-hover:bg-flamingo"
+              : "bg-buttercup group-hover:bg-buttercup"
+          } text-transparent rounded-full border px-6 py-2 border-black inset-0 z-0`}
         >
           {title}
         </div>
         <div
           className={` transition-all absolute ${
             clicked
-              ? "bottom-0 right-0 bg-retro-green-shade-1"
+              ? "bottom-0.5 right-0.5 bg-retro-green"
               : "bottom-1 right-1 bg-retro-green"
-          } z-1 rounded-full px-5 py-2 flex-1 border-2 z-1 border-black`}
+          } z-1 rounded-full px-6 py-2 flex-1 border z-1 border-black`}
         >
           {title}
         </div>
