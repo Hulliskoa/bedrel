@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 interface HeaderMenuItemProps {
   text: string;
@@ -7,10 +7,17 @@ interface HeaderMenuItemProps {
 }
 
 function HeaderMenuItem({ text, path }: HeaderMenuItemProps) {
+  const location = useLocation();
+
+  const selected =
+    path === location.pathname
+      ? "bg-retro-green border font-medium"
+      : "hover:text-retro-green border border-transparent ";
+
   return (
     <Link
       to={path}
-      className='text-sm no-highlights justify-self-end lg:flex-grow block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:border-b-2 hover:text-retro-green'
+      className={`${selected} text-sm rounded-full px-4 py-2 no-highlights justify-self-end lg:flex-grow block mt-4 lg:inline-block lg:mt-0 text-teal-200  `}
     >
       {text}
     </Link>

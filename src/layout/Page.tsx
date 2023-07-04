@@ -2,11 +2,15 @@ import React from "react";
 
 interface MainPageProps {
   children: JSX.Element[] | JSX.Element;
+  bgColor?: string;
 }
 
-function Page({ children }: MainPageProps) {
+function Page({ bgColor, children }: MainPageProps) {
+  const bacgrkoundColor = bgColor ?? "";
   return (
-    <div className='grid md:grid-cols-4 gap-x-4 '>
+    <div
+      className={`${bacgrkoundColor} container grid md:grid-cols-4 gap-x-4  mx-auto px-10 lg:px-60`}
+    >
       {children}
     </div>
   );

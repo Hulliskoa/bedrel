@@ -24,7 +24,7 @@ export function RouterElement() {
       element: lazyLoadRoutes("Foredrag"),
     },
     {
-      path: "/påmelding",
+      path: "/pamelding",
       name: "Påmelding",
       element: lazyLoadRoutes("SignUp"),
     },

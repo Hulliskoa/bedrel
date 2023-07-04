@@ -6,20 +6,36 @@ import PrimaryButton from "../components/buttons/primaryButton";
 
 function Home() {
   return (
-    <Page>
-      <div className='lg:col-span-3 flex'>
-        <TextContainer title='Bedre Læring'>
-          <div>
-            Konferansen for lærere, skoleledere og alle dere som brenner for
-            skole! La oss sammen utforske hvordan vi kan skape enda mer
-            engasjernede læring på digitale flater.
-          </div>
-          <div className='justify-self-start mt-16'>
-            <PrimaryButton alt onPress={() => {}} title='Påmelding' />
-          </div>
-        </TextContainer>
-      </div>
-    </Page>
+    <>
+      <Page>
+        <div className='lg:col-span-3 h-screen flex'>
+          <TextContainer title='Bedre Læring'>
+            <div>
+              Konferansen for lærere, skoleledere og alle dere som brenner for
+              skole! La oss sammen utforske hvordan vi kan skape enda mer
+              engasjernede læring på digitale flater.
+            </div>
+            <div className='justify-self-start mt-16'>
+              <PrimaryButton alt onPress={() => {}} title='Påmelding' />
+            </div>
+          </TextContainer>
+        </div>
+      </Page>
+      <Page bgColor="bg-white">
+        <div className='lg:col-span-3 h-screen flex'>
+          <TextContainer title='Hvorfor delta?'>
+            <div>
+              Konferansen for lærere, skoleledere og alle dere som brenner for
+              skole! La oss sammen utforske hvordan vi kan skape enda mer
+              engasjernede læring på digitale flater.
+            </div>
+            <div className='justify-self-start mt-16'>
+              <PrimaryButton alt onPress={() => {}} title='Påmelding' />
+            </div>
+          </TextContainer>
+        </div>
+      </Page>
+    </>
   );
 }
 
