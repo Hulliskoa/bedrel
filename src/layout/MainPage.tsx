@@ -5,7 +5,7 @@ interface MainPageProps {
 }
 
 function MainPage({ children }: MainPageProps) {
-  return <div className='font-poppins'>{children}</div>;
+  return <div className='font-poppins mt-32'>{children}</div>;
 }
 
 export default MainPage;

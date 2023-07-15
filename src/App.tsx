@@ -6,12 +6,16 @@ import { RouterElement } from "./routes";
 
 function App() {
   return (
-    <>
+    <div className='bg-dragonbreath'>
+      <div className="sticky top-0 z-20">
       <Header />
+      </div>
+   
+      
       <MainPage>
         <RouterElement />
       </MainPage>
-    </>
+    </div>
   );
 }
 
