@@ -61,7 +61,7 @@ export default function DropDown() {
                     "block px-4 py-2 text-sm"
                   )}
                 >
-                  Informasjon
+                  Utstillere
                 </Link>
               )}
             </Menu.Item>
@@ -74,7 +74,7 @@ export default function DropDown() {
                     "block px-4 py-2 text-sm"
                   )}
                 >
-                  Foredrag
+                  Praktisk info
                 </Link>
               )}
             </Menu.Item>

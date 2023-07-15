@@ -1,7 +1,7 @@
 import React from "react";
 import Page from "../layout/Page";
 
-function Foredrag() {
+function Utstillere() {
   return (
     <Page>
       <div>hei</div>
@@ -9,4 +9,5 @@ function Foredrag() {
   );
 }
 
-export default Foredrag;
+export default Utstillere;
+  

@@ -36,13 +36,13 @@ function Header() {
         <div className='block lg:hidden'>
           <DropDown />
         </div>
-        <div className='hidden w-full gap-x-4  lg:flex lg:items-center lg:w-auto'>
+        <div className='hidden w-full gap-x-6  lg:flex lg:items-center lg:w-auto'>
           <HeaderMenuItem path='/program' text='Program' />
-          <HeaderMenuItem path='/foredrag' text='Foredrag' />
-          <HeaderMenuItem path='/info' text='Informasjon' />
+          <HeaderMenuItem path='/utstillere' text='Utstillere' />
+          <HeaderMenuItem path='/info' text='Praktisk info' />
           <Link
             to='/pamelding'
-            className=' bg-retro-green font-semibold border text-sm rounded-full px-4 py-2 no-highlights justify-self-end lg:flex-grow block mt-4 lg:inline-block lg:mt-0 text-teal-200'
+            className=' bg-retro-green font-semibold border text-md rounded-full px-4 py-2 no-highlights justify-self-end lg:flex-grow block mt-4 lg:inline-block lg:mt-0 text-teal-200'
           >
             Påmelding
           </Link>

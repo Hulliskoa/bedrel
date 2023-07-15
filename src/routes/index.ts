@@ -15,13 +15,13 @@ export function RouterElement() {
     },
     {
       path: "/info",
-      name: "Info",
+      name: "Praktisk Info",
       element: lazyLoadRoutes("Info"),
     },
     {
-      path: "/foredrag",
-      name: "Foredrag",
-      element: lazyLoadRoutes("Foredrag"),
+      path: "/utstillere",
+      name: "Utstillere",
+      element: lazyLoadRoutes("Utstillere"),
     },
     {
       path: "/pamelding",

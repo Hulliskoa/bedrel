@@ -17,7 +17,7 @@ function HeaderMenuItem({ text, path }: HeaderMenuItemProps) {
   return (
     <Link
       to={path}
-      className={`${selected} font-semibold text-sm rounded-full px-4 py-2 no-highlights justify-self-end lg:flex-grow block mt-4 lg:inline-block lg:mt-0 text-teal-200  `}
+      className={`${selected} font-semibold text-md rounded-full px-4 py-2 no-highlights justify-self-end lg:flex-grow block mt-4 lg:inline-block lg:mt-0 text-teal-200  `}
     >
       {text}
     </Link>
