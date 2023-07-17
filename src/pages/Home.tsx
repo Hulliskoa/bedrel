@@ -42,17 +42,16 @@ function Home() {
           <div className='grid md:grid-cols-4 gap-y-6 gap-x-6'>
             <div className='bg-[#D9D9D9] col-span-2 h-52 w-full'></div>
             <div className='bg-[#D9D9D9] col-span-2 h-52 w-full'></div>
-            <div className='bg-[#D9D9D9]  h-52 w-full'></div>
-            <div className='bg-[#D9D9D9]  h-52 w-full'></div>
-            <div className='bg-[#D9D9D9]  h-52 w-full'></div>
-            <div className='bg-[#D9D9D9]  h-52 w-full'></div>
+            <div className='bg-[#D9D9D9] h-52 w-full'></div>
+            <div className='bg-[#D9D9D9] h-52 w-full'></div>
+            <div className='bg-[#D9D9D9] h-52 w-full'></div>
+            <div className='bg-[#D9D9D9] h-52 w-full'></div>
           </div>
         </div>
 
         <div className='col-span-12'>
           <div className='font-semibold text-[28px] mb-4  '>Partnere</div>
-
-          <div className='grid md:grid-cols-4 gap-y-6 gap-x-6'>
+          <div className='grid sm:grid-cols-2 md:grid-cols-4 gap-y-6 gap-x-6'>
             <img className='w-full' src={cappelen} alt='cappelen' />
             <img className='w-full' src={aschehoug} alt='aschehoug' />
             <img className='w-full' src={learnlab} alt='learn lab' />
