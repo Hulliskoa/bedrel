@@ -10,8 +10,6 @@ function App() {
       <div className="sticky top-0 z-20">
       <Header />
       </div>
-   
-      
       <MainPage>
         <RouterElement />
       </MainPage>

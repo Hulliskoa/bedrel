@@ -22,11 +22,13 @@ function Header() {
 
   return (
     <header
-      className={`transition mx-auto relative duration-500 ${
+      className={`relative duration-500 ${
         scrollPosition > 0 ? "bg-white" : "bg-transparent"
       }`}
     >
-      <nav className='flex items-center justify-between flex-wrap bg-teal-500 py-3 container mx-auto '>
+      <nav
+        className={`px-4  flex items-center justify-between flex-wrap bg-teal-500 py-3 container mx-auto `}
+      >
         <div className='flex items-center flex-shrink-0 space-x-2'>
           <img className='h-10' alt='logo' src={logoSymbol} />
           <span className='font-poppins font-bold text-black text-md'>

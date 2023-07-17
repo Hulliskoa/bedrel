@@ -18,7 +18,7 @@ function Home() {
   return (
     <>
       <Page>
-        <div className='col-span-6 flex'>
+        <div className='sm:col-span-6 col-span-12 flex'>
           <TextContainer title='Bedre Læring'>
             <div>
               Konferansen for lærere, skoleledere og alle dere som brenner for
