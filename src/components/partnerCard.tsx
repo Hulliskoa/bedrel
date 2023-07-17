@@ -64,7 +64,7 @@ function PartnerCard({
           }   flex-1 grid pb-6 border-[1px] h-full  w-full rounded-md   border-black`}
         >
           <div>
-            <img className='rounded-md mx-auto' src={partnerImage} alt='partner' />
+            <img className='rounded-md mx-auto' src={partnerImage} alt={partnerName} />
             <div className='h-[1px] bg-black w-full' />
           </div>
 
