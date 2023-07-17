@@ -22,7 +22,7 @@ function Header() {
 
   return (
     <header
-      className={`transition relative duration-500 ${
+      className={`transition mx-auto relative duration-500 ${
         scrollPosition > 0 ? "bg-white" : "bg-transparent"
       }`}
     >

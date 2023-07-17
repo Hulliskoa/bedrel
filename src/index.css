@@ -1,27 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
-
-
 @layer components {
-  .no-highlights{
+  .no-highlights {
     -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -31,3 +28,32 @@ code {
     user-select: none;
   }
 }
+
+.custom-header-button-hover::after {
+  display: block;
+  content: "";
+  border-bottom: 1px solid;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.custom-header-button-hover:hover::after {
+  transform: scaleX(1);
+  transition-delay: 0.3s;
+}
+
+.selected-header-button::after {
+  display: block;
+  content: "";
+  border-radius: 50%;
+
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.selected-header-button:hover::after {
+  transform: scaleX(1);
+  transition-delay: 0.3s;
+}
+
+

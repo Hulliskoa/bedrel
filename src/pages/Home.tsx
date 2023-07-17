@@ -3,13 +3,13 @@ import React from "react";
 import Page from "../layout/Page";
 import TextContainer from "../components/text/TextContainer";
 import PrimaryButton from "../components/buttons/primaryButton";
-import { ReactComponent as Cappelen } from "../components/images/1Logogs.svg";
 import PlantBook from "../components/images/plantBook.svg";
+
 function Home() {
   return (
     <>
       <Page>
-        <div className='col-span-6 h-[calc(100vh-250px)] flex'>
+        <div className='col-span-6 flex'>
           <TextContainer title='Bedre Læring'>
             <div>
               Konferansen for lærere, skoleledere og alle dere som brenner for
@@ -21,37 +21,37 @@ function Home() {
             </div>
           </TextContainer>
         </div>
-        <div className='col-span-6 grid '>
+        <div className='col-span-6  hidden sm:grid'>
           <div className='mx-auto'>
             <img src={PlantBook} alt='plant on top of book' />
           </div>
         </div>
-      </Page>
-      <Page>
-        <div className='lg:col-span-3 flex'>
-          <div className='text-[30px] md:text-[50px] font-semibold'>
-            Hvorfor delta?
+
+        <div className='col-span-12'>
+          <div className='font-semibold text-[28px] mb-4  '>Hvorfor delta?</div>
+
+          <div className='grid md:grid-cols-4 gap-y-6 gap-x-6'>
+            <div className='bg-[#D9D9D9] col-span-2 h-52 w-full'></div>
+            <div className='bg-[#D9D9D9] col-span-2 h-52 w-full'></div>
+            <div className='bg-[#D9D9D9]  h-52 w-full'></div>
+            <div className='bg-[#D9D9D9]  h-52 w-full'></div>
+            <div className='bg-[#D9D9D9]  h-52 w-full'></div>
+            <div className='bg-[#D9D9D9]  h-52 w-full'></div>
           </div>
-          <TextContainer>
-            <div></div>
-          </TextContainer>
         </div>
-        <div className='lg:col-span-3  flex'>
-          <div className='text-[30px] md:text-[50px] font-semibold'>
-            Program
-          </div>
-          <TextContainer>
-            <div></div>
-          </TextContainer>
-        </div>
-        <div className='lg:col-span-3  flex flex-col'>
-          <div className='text-[30px] md:text-[50px] font-semibold'>
-            Partnere
-          </div>
-          <div className='grid gap-x-20 grid-cols-3'>
-            <div>
-              <Cappelen />
-            </div>
+
+        <div className='col-span-12'>
+          <div className='font-semibold text-[28px] mb-4  '>Partnere</div>
+
+          <div className='grid md:grid-cols-4 gap-y-6 gap-x-6'>
+            <div className='bg-[#D9D9D9]  h-52 w-full'></div>
+            <div className='bg-[#D9D9D9]  h-52 w-full'></div>
+            <div className='bg-[#D9D9D9]  h-52 w-full'></div>
+            <div className='bg-[#D9D9D9]  h-52 w-full'></div>
+            <div className='bg-[#D9D9D9]  h-52 w-full'></div>
+            <div className='bg-[#D9D9D9]  h-52 w-full'></div>
+            <div className='bg-[#D9D9D9]  h-52 w-full'></div>
+            <div className='bg-[#D9D9D9]  h-52 w-full'></div>
           </div>
         </div>
       </Page>
