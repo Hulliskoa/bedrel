@@ -5,7 +5,7 @@ interface MainPageProps {
 }
 
 function MainPage({ children }: MainPageProps) {
-  return <div className=' container bg-dragonbreath font-poppins px-4 pb-20 mt-32 mx-auto'>{children}</div>;
+  return <div className=' container bg-dragonbreath font-poppins px-4 pb-20 mt-14 mx-auto'>{children}</div>;
 }
 
 export default MainPage;

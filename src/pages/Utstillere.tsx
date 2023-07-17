@@ -14,6 +14,7 @@ import pendel from "../components/images/Sponsor 9Logogs.svg";
 function Utstillere() {
   return (
     <Page>
+      <div className="col-span-12 mb-6 font-semibold text-6xl">Ustillere og seminarer</div>
       <PartnerCard
         partnerImage={cappelen}
         onPress={() => {}}
@@ -28,6 +29,8 @@ function Utstillere() {
         stand
         onPress={() => {}}
         partnerName='Aschehoug'
+        partnertext="Med sine 7 milliarder spillere er Kahoo et av nåtidens viktigste
+        læringsverktøy."
       />
       <PartnerCard
         partnerImage={learnlab}

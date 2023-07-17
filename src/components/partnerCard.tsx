@@ -46,7 +46,7 @@ function PartnerCard({
 
   return (
     <button
-      className='no-highlights h-[302px]  max-w-[292px] col-span-6 md:col-span-3 whitespace-nowrap flex'
+      className='no-highlights h-[302px] sm:col-span-6 lg:col-span-3 whitespace-nowrap flex'
       onTouchEnd={() => onLeave()}
       onTouchStart={() => onButtonClick()}
       onMouseUp={() => onLeave()}
@@ -61,32 +61,34 @@ function PartnerCard({
             clicked
               ? "bottom-0.5 right-0.5 bg-white"
               : "bottom-1 right-1 bg-white"
-          }   flex-1 grid gap-y-3 pb-6 border-[1px] h-full  w-full rounded-md   border-black`}
+          }   flex-1 grid pb-6 border-[1px] h-full  w-full rounded-md   border-black`}
         >
-          <img
-            className='rounded-md rounded-b-none border-b'
-            src={partnerImage}
-            alt='partner'
-          />
-          <div className='flex flex-row  px-6 gap-x-2 items-center'>
-            {seminar && (
-              <div className='bg-buttercup-shade-1 px-1.5 py-1 font-medium text-xs rounded-md'>
-                Seminar
-              </div>
-            )}
-            {stand && (
-              <div className='bg-flamingo-shade-1 px-1.5 py-1 font-medium text-xs  rounded-md'>
-                Stand
-              </div>
-            )}
+          <div>
+            <img className='rounded-md mx-auto' src={partnerImage} alt='partner' />
+            <div className='h-[1px] bg-black w-full' />
           </div>
-          <div className='gap-y-1 flex flex-col px-6'>
-            <div className='font-semibold whitespace-pre-wrap text-start text-base '>
-              {partnerName}
-            </div>
 
-            <div className='font-normal whitespace-pre-wrap text-start text-sm '>
-              {partnertext}
+          <div className="grid gap-y-3">
+            <div className='flex flex-row  px-6 gap-x-2 items-center'>
+              {seminar && (
+                <div className='bg-buttercup-shade-1 px-1.5 py-1 font-medium text-xs rounded-md'>
+                  Seminar
+                </div>
+              )}
+              {stand && (
+                <div className='bg-flamingo-shade-1 px-1.5 py-1 font-medium text-xs  rounded-md'>
+                  Stand
+                </div>
+              )}
+            </div>
+            <div className='gap-y-1 flex flex-col px-6'>
+              <div className='font-semibold whitespace-pre-wrap text-start text-base '>
+                {partnerName}
+              </div>
+
+              <div className='font-normal whitespace-pre-wrap text-start text-sm '>
+                {partnertext}
+              </div>
             </div>
           </div>
         </div>
