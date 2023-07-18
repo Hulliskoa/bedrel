@@ -15,7 +15,7 @@ function HeaderMenuItem({ text, path }: HeaderMenuItemProps) {
   return (
     <Link
       to={path}
-      className={`${selected} font-semibold text-md px-6 py-2 no-highlights justify-self-end block  lg:mt-0`}
+      className={`${selected} font-medium text-md px-6 py-2 no-highlights justify-self-end block  lg:mt-0`}
     >
       {text}
     </Link> 

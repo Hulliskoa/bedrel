@@ -44,7 +44,7 @@ function Header() {
           <HeaderMenuItem path='/info' text='Praktisk info' />
           <Link
             to='/pamelding'
-            className=' bg-retro-green hover:bg-retro-green-shade-1 font-semibold border text-md rounded-full px-4 py-2 no-highlights justify-self-end lg:flex-grow block mt-4 lg:inline-block lg:mt-0 text-teal-200'
+            className=' bg-retro-green hover:bg-retro-green-shade-1 font-medium border text-md rounded-full px-4 py-2 no-highlights justify-self-end lg:flex-grow block mt-4 lg:inline-block lg:mt-0 text-teal-200'
           >
             Påmelding
           </Link>
