@@ -9,7 +9,8 @@ function Page({ bgColor, children }: MainPageProps) {
   const bacgrkoundColor = bgColor ?? "";
   return (
     <div
-      className={`${bacgrkoundColor} container grid gap-y-12 sm:grid-cols-12 gap-x-6`}
+
+      className={`${bacgrkoundColor} container grid gap-y-4 snap-y md:gap-y-12 grid-cols-3 sm:grid-cols-6 md:grid-cols-12 gap-x-6`}
     >
       {children}
     </div>

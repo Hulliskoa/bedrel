@@ -46,7 +46,7 @@ function PartnerCard({
 
   return (
     <button
-      className='no-highlights h-[302px] sm:col-span-6 lg:col-span-3 whitespace-nowrap flex'
+      className='no-highlights h-[302px] col-span-12 md:col-span-6 lg:col-span-3 flex'
       onTouchEnd={() => onLeave()}
       onTouchStart={() => onButtonClick()}
       onMouseUp={() => onLeave()}

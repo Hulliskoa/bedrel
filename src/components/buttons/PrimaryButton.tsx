@@ -45,7 +45,7 @@ function PrimaryButton({ title, alt, onPress }: PrimaryButtonProps) {
             clicked
               ? "bottom-0.5 right-0.5 bg-retro-green"
               : "bottom-1 right-1 bg-retro-green"
-          } rounded-full px-6 py-2 flex-1 border  border-black`}
+          } rounded-full px-6 py-2 flex-1 border hover:bg-retro-green-shade-1  border-black`}
         >
           {title}
         </div>

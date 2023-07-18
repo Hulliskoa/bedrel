@@ -2,7 +2,7 @@ import React from "react";
 
 import Page from "../layout/Page";
 import TextContainer from "../components/text/TextContainer";
-import PrimaryButton from "../components/buttons/primaryButton";
+import PrimaryButton from "../components/buttons/PrimaryButton";
 import PlantBook from "../components/images/plantBook.svg";
 import cappelen from "../components/images/Sponsor 1Logogs.svg";
 import aschehoug from "../components/images/Sponsor 2Logogs.svg";

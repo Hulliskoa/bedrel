@@ -1,6 +1,6 @@
 import React from "react";
 
-import PrimaryButton from "../components/buttons/primaryButton";
+import PrimaryButton from "../components/buttons/PrimaryButton";
 import Page from "../layout/Page";
 
 function Info() {

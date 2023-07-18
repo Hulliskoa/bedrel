@@ -10,21 +10,8 @@ export default function DropDown() {
   return (
     <Menu as='div' className='relative inline-block text-left'>
       <div>
-        <Menu.Button className='inline-flex w-full justify-center gap-x-1.5 rounded-md px-3 py-2 text-sm font-semibold  shadow-sm  border  hover:bg-retro-green'>
-          <svg
-            xmlns='http://www.w3.org/2000/svg'
-            fill='none'
-            viewBox='0 0 24 24'
-            strokeWidth={1.5}
-            stroke='currentColor'
-            className='w-6 h-6'
-          >
-            <path
-              strokeLinecap='round'
-              strokeLinejoin='round'
-              d='M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5'
-            />
-          </svg>
+        <Menu.Button className='inline-flex w-full justify-center gap-x-1.5 rounded-full px-6 py-2 text-sm font-semibold  shadow-sm  border  hover:bg-retro-green'>
+        Meny
         </Menu.Button>
       </div>
 
@@ -55,7 +42,7 @@ export default function DropDown() {
             <Menu.Item>
               {({ active }) => (
                 <Link
-                  to='/info'
+                  to='/utstillere'
                   className={classNames(
                     active ? "bg-gray-100 text-gray-900" : "text-gray-700",
                     "block px-4 py-2 text-sm"
@@ -68,7 +55,7 @@ export default function DropDown() {
             <Menu.Item>
               {({ active }) => (
                 <Link
-                  to='/foredrag'
+                  to='/info'
                   className={classNames(
                     active ? "bg-gray-100 text-gray-900" : "text-gray-700",
                     "block px-4 py-2 text-sm"
@@ -77,11 +64,11 @@ export default function DropDown() {
                   Praktisk info
                 </Link>
               )}
-            </Menu.Item>
+            </Menu.Item>  
             <Menu.Item>
               {({ active }) => (
                 <Link
-                  to='/påmelding'
+                  to='/pamelding'
                   className={classNames(
                     active ? "bg-gray-100 text-gray-900" : "text-gray-700",
                     "block px-4 py-2 text-sm"
